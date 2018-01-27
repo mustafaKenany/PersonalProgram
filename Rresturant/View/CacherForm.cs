@@ -282,7 +282,7 @@ namespace Rresturant.View
                 param2[0].Value = int.Parse ( textBoxInvoiceNo.Text );
                 param2[1].Value = textBoxCustomerName.Text;
                 param2[2].Value = "بيع";
-                param2[3].Value = dateTimePickerInvoiceDate.Text;
+                param2[3].Value = dateTimePickerInvoiceDate.Value.Date.ToShortDateString();
                 param2[4].Value = PayOrNot;
                 param2[5].Value = RUNORSAVE;
                 param2[6].Value = IQPaidAmount ();

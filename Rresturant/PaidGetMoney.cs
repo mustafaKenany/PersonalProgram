@@ -9,7 +9,7 @@ namespace Rresturant
 {
     public partial class PaidGetMoney : Form
     {
-
+        int keyboardFlag = 0;
         public PaidGetMoney()
         {
             InitializeComponent ();
@@ -24,9 +24,7 @@ namespace Rresturant
                 buttonDeleteallTransaction.Enabled = false;
                 buttonModifeTransaction.Enabled = false;
             }
-
             buttonAddTransaction.Enabled = false;
-
             buttondeleteTransaction.Enabled = false;
             buttonSaveTransaction.Enabled = false;
             check_button_visability ();
@@ -59,6 +57,7 @@ namespace Rresturant
         {
             labelUserName.Text = BasicClass.UserName;
             var date = dateTimePickerTransaction.Value.Date.ToString ( "yyyy-MM-dd" );
+            
             if ( BasicClass.PaidOrGet )
             {
                 if ( BasicClass.USorIQ )
@@ -132,6 +131,8 @@ namespace Rresturant
             
             int idx = dataGridViewMoney.Rows.Add ();
             dataGridViewMoney.ReadOnly = false;
+            dataGridViewMoney.Columns["ColumnTransactionID"].ReadOnly = true;
+            dataGridViewMoney.Columns["ColumnTotal"].ReadOnly = true;
             DataGridViewRow row = dataGridViewMoney.Rows[idx];
             get_TransactionID ();
             check_button_visability ();
@@ -229,13 +230,13 @@ namespace Rresturant
                     }
                     else
                     {
-                        buttonAddTransaction_Click ( sender , e );
-                        dataGridViewMoney.CurrentCell = dataGridViewMoney[0 , dataGridViewMoney.CurrentCell.RowIndex];
+                        if (!dataGridViewMoney.ReadOnly)
+                        {
+                            buttonAddTransaction_Click(sender, e);
+                            dataGridViewMoney.CurrentCell = dataGridViewMoney[0, dataGridViewMoney.CurrentCell.RowIndex];
 
+                        }
                     }
-
-
-
                 }
             }
         }
@@ -340,10 +341,8 @@ namespace Rresturant
                                         var TransferRate = Convert.ToDecimal ( dataGridViewMoney.Rows[e.RowIndex].Cells["ColumnTansferPercentage"].Value.ToString () );
                                         var TotalPaid = Money * TransferRate;
                                         dataGridViewMoney.Rows[e.RowIndex].Cells["ColumnTotal"].Value = TotalPaid;
-
                                     }
                                 }
-
                             }
                         }
 
@@ -411,7 +410,17 @@ namespace Rresturant
             {
                 if ( dataGridViewMoney.CurrentCell.RowIndex>=0 )
                 {
-
+                    switch (dataGridViewMoney.Columns[dataGridViewMoney.CurrentCell.ColumnIndex].Name)
+                    {
+                        case "ColumnmoneyType":
+                        case "ColumnMoneyAmount":    
+                        case "ColumnTansferPercentage":
+                            keyboardFlag = 1;
+                            break;
+                        default:
+                            keyboardFlag = 0;
+                            break;
+                    }
                 }
             }
         }
@@ -587,7 +596,18 @@ namespace Rresturant
 
         private void AlphabetwithDigits(object sender , KeyPressEventArgs e)
         {
-            e.Handled = e.KeyChar != (char) Keys.Back && !char.IsSeparator ( e.KeyChar ) && !char.IsLetter ( e.KeyChar ) && !char.IsDigit ( e.KeyChar );
+            switch (keyboardFlag)
+            {
+                case 0:
+                    e.Handled = e.KeyChar != (char)Keys.Back && !char.IsSeparator(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsLetter(e.KeyChar);
+                    break;
+                case 1:
+                    e.Handled = e.KeyChar != (char)Keys.Back && !char.IsSeparator(e.KeyChar) &&  !char.IsDigit(e.KeyChar);
+
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void buttondeleteTransaction_Click(object sender , EventArgs e)
@@ -618,6 +638,96 @@ namespace Rresturant
             else
             {
                 MessageBox.Show ( "يجب تحديد السطر الذي تريد حذفه" , "MESSAGE" );
+            }
+        }
+
+        private void buttonPrintTransaction_Click(object sender, EventArgs e)
+        {
+            var dt = new DataTable();
+            var UsedClass = new BasicClass();
+            SqlParameter[] param = new SqlParameter[1];
+            var crp = new Reports.PrintTransaction();
+            PrintForm form = new PrintForm();
+
+            if (dataGridViewMoney.Rows.Count>0)
+            {
+                if (dataGridViewMoney.CurrentCell.RowIndex>=0)
+                {
+                    CrystalDecisions.CrystalReports.Engine.TextObject PaidORGET = (CrystalDecisions.CrystalReports.Engine.TextObject)crp.ReportDefinition.Sections["Section1"].ReportObjects["Text1"];
+                    CrystalDecisions.CrystalReports.Engine.TextObject USorIQ = (CrystalDecisions.CrystalReports.Engine.TextObject)crp.ReportDefinition.Sections["Section1"].ReportObjects["Text2"];
+                    CrystalDecisions.CrystalReports.Engine.TextObject Payment = (CrystalDecisions.CrystalReports.Engine.TextObject)crp.ReportDefinition.Sections["Section3"].ReportObjects["Text4"];
+                    CrystalDecisions.CrystalReports.Engine.TextObject PaymentType = (CrystalDecisions.CrystalReports.Engine.TextObject)crp.ReportDefinition.Sections["Section3"].ReportObjects["Text10"];
+                    CrystalDecisions.CrystalReports.Engine.TextObject Customer = (CrystalDecisions.CrystalReports.Engine.TextObject)crp.ReportDefinition.Sections["Section3"].ReportObjects["Text6"];
+                    CrystalDecisions.CrystalReports.Engine.TextObject Details = (CrystalDecisions.CrystalReports.Engine.TextObject)crp.ReportDefinition.Sections["Section3"].ReportObjects["Text8"];
+                    if (BasicClass.PaidOrGet)
+                    {
+                        PaidORGET.Text = "مدفوعات";
+                        Customer.Text = "Program";
+                    }
+                    else
+                    {
+                        PaidORGET.Text = "مقبوضات";
+                        Customer.Text= dataGridViewMoney.Rows[dataGridViewMoney.CurrentCell.RowIndex].Cells["ColumnCutomerName"].Value.ToString();
+                    }
+                    if (BasicClass.USorIQ)
+                    {
+                        USorIQ.Text = "دولار";
+                    }
+                    else
+                    {
+                        USorIQ.Text = "دينار";
+                    }
+                    Payment.Text = dataGridViewMoney.Rows[dataGridViewMoney.CurrentCell.RowIndex].Cells["ColumnMoneyAmount"].Value.ToString();
+                    PaymentType.Text = dataGridViewMoney.Rows[dataGridViewMoney.CurrentCell.RowIndex].Cells["ColumnmoneyType"].Value.ToString();
+                    Details.Text = dataGridViewMoney.Rows[dataGridViewMoney.CurrentCell.RowIndex].Cells["ColumnNotes"].Value.ToString();
+                    
+                }
+            form.crystalReportViewer1.ReportSource = crp;
+            form.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("لا توجد بيانات للطباعة", "MESSAGE");
+            }
+        }
+
+        private void buttonPrintallTransaction_Click(object sender, EventArgs e)
+        {
+            var dt = new DataTable();
+            var UsedClass = new BasicClass();
+            SqlParameter[] param = new SqlParameter[2];
+            var crp = new Reports.PrintAllTransactions();
+            PrintForm form = new PrintForm();
+            if (dataGridViewMoney.Rows.Count>0)
+            {
+                CrystalDecisions.CrystalReports.Engine.TextObject PaidORGET = (CrystalDecisions.CrystalReports.Engine.TextObject)crp.ReportDefinition.Sections["Section1"].ReportObjects["Text1"];
+                CrystalDecisions.CrystalReports.Engine.TextObject USorIQ = (CrystalDecisions.CrystalReports.Engine.TextObject)crp.ReportDefinition.Sections["Section1"].ReportObjects["Text2"];
+                param[0] = new SqlParameter("", SqlDbType.NVarChar, 100);
+                param[1] = new SqlParameter("",SqlDbType.Date);
+
+                if (BasicClass.PaidOrGet)
+                {
+                    PaidORGET.Text = "مدفوعات";
+                }
+                else
+                {
+                    PaidORGET.Text = "مقبوضات";
+                }
+                if (BasicClass.USorIQ)
+                {
+                    USorIQ.Text = "دولار";
+                }
+                else
+                {
+                    USorIQ.Text = "دينار";
+                }
+                crp.SetDataSource(dataGridViewMoney.DataSource);
+                form.crystalReportViewer1.ReportSource = crp;
+                form.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("لا توجد بيانات للطباعة", "MESSAGE");
             }
         }
     }

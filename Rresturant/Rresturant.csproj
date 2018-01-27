@@ -74,6 +74,18 @@
     <Compile Include="PaidGetMoney.Designer.cs">
       <DependentUpon>PaidGetMoney.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\PrintAllTransactions.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintAllTransactions.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PrintTransaction.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintTransaction.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="View\boxMoney.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +251,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PaidGetMoney.resx">
       <DependentUpon>PaidGetMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PrintAllTransactions.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintAllTransactions.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PrintTransaction.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintTransaction.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="View\boxMoney.resx">
       <DependentUpon>boxMoney.cs</DependentUpon>

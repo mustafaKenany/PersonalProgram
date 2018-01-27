@@ -30,7 +30,9 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CacherForm));
             this.panelTitle = new System.Windows.Forms.Panel();
             this.labelExitForm = new System.Windows.Forms.Label();
@@ -136,7 +138,7 @@
             // 
             this.labelExitForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelExitForm.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelExitForm.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExitForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelExitForm.ForeColor = System.Drawing.Color.White;
             this.labelExitForm.Location = new System.Drawing.Point(1317, 0);
             this.labelExitForm.Name = "labelExitForm";
@@ -150,7 +152,7 @@
             // 
             this.labelTilte.BackColor = System.Drawing.Color.Transparent;
             this.labelTilte.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTilte.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTilte.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelTilte.ForeColor = System.Drawing.Color.White;
             this.labelTilte.Location = new System.Drawing.Point(0, 0);
             this.labelTilte.Name = "labelTilte";
@@ -181,7 +183,7 @@
             this.flowLayoutPanelCategories.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.flowLayoutPanelCategories.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanelCategories.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanelCategories.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flowLayoutPanelCategories.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.flowLayoutPanelCategories.ForeColor = System.Drawing.Color.White;
             this.flowLayoutPanelCategories.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelCategories.Margin = new System.Windows.Forms.Padding(0);
@@ -196,7 +198,7 @@
             this.flowLayoutPanelitemsWithoutBar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.flowLayoutPanelitemsWithoutBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanelitemsWithoutBar.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanelitemsWithoutBar.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flowLayoutPanelitemsWithoutBar.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.flowLayoutPanelitemsWithoutBar.ForeColor = System.Drawing.Color.White;
             this.flowLayoutPanelitemsWithoutBar.Location = new System.Drawing.Point(0, 345);
             this.flowLayoutPanelitemsWithoutBar.Margin = new System.Windows.Forms.Padding(0);
@@ -232,14 +234,14 @@
             this.ColumnExpireDate,
             this.ColumnStockQuantity,
             this.ColumnCriticalRange});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewItems.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewItems.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewItems.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewItems.Location = new System.Drawing.Point(1, 1);
             this.dataGridViewItems.Margin = new System.Windows.Forms.Padding(1);
@@ -249,6 +251,7 @@
             this.dataGridViewItems.RowHeadersVisible = false;
             this.dataGridViewItems.RowHeadersWidth = 50;
             this.dataGridViewItems.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewItems.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Changa", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.dataGridViewItems.RowTemplate.Height = 40;
             this.dataGridViewItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridViewItems.Size = new System.Drawing.Size(658, 415);
@@ -276,12 +279,18 @@
             // 
             // ColumnItemPrice
             // 
+            dataGridViewCellStyle3.Format = "N2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.ColumnItemPrice.DefaultCellStyle = dataGridViewCellStyle3;
             this.ColumnItemPrice.HeaderText = "السعر";
             this.ColumnItemPrice.Name = "ColumnItemPrice";
             this.ColumnItemPrice.ReadOnly = true;
             // 
             // ColumnTotal
             // 
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.ColumnTotal.DefaultCellStyle = dataGridViewCellStyle4;
             this.ColumnTotal.HeaderText = "المجموع";
             this.ColumnTotal.Name = "ColumnTotal";
             // 
@@ -315,13 +324,13 @@
             // textBoxReminderMoney
             // 
             this.textBoxReminderMoney.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxReminderMoney.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxReminderMoney.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxReminderMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxReminderMoney.Location = new System.Drawing.Point(1, 106);
             this.textBoxReminderMoney.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxReminderMoney.Name = "textBoxReminderMoney";
             this.textBoxReminderMoney.ReadOnly = true;
-            this.textBoxReminderMoney.Size = new System.Drawing.Size(164, 32);
+            this.textBoxReminderMoney.Size = new System.Drawing.Size(164, 35);
             this.textBoxReminderMoney.TabIndex = 18;
             this.textBoxReminderMoney.Text = "0";
             this.textBoxReminderMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -329,13 +338,13 @@
             // textBoxTotalSaveAmount
             // 
             this.textBoxTotalSaveAmount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxTotalSaveAmount.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTotalSaveAmount.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxTotalSaveAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxTotalSaveAmount.Location = new System.Drawing.Point(331, 106);
             this.textBoxTotalSaveAmount.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxTotalSaveAmount.Name = "textBoxTotalSaveAmount";
             this.textBoxTotalSaveAmount.ReadOnly = true;
-            this.textBoxTotalSaveAmount.Size = new System.Drawing.Size(162, 32);
+            this.textBoxTotalSaveAmount.Size = new System.Drawing.Size(162, 35);
             this.textBoxTotalSaveAmount.TabIndex = 17;
             this.textBoxTotalSaveAmount.Text = "0";
             this.textBoxTotalSaveAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -343,7 +352,7 @@
             // labelReminderMoney
             // 
             this.labelReminderMoney.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelReminderMoney.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelReminderMoney.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelReminderMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelReminderMoney.Location = new System.Drawing.Point(168, 107);
             this.labelReminderMoney.Margin = new System.Windows.Forms.Padding(2);
@@ -357,7 +366,7 @@
             // 
             this.labelTotalPaidMoney.AutoSize = true;
             this.labelTotalPaidMoney.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTotalPaidMoney.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalPaidMoney.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelTotalPaidMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelTotalPaidMoney.Location = new System.Drawing.Point(496, 107);
             this.labelTotalPaidMoney.Margin = new System.Windows.Forms.Padding(2);
@@ -370,13 +379,13 @@
             // textBoxPercentageTransfer
             // 
             this.textBoxPercentageTransfer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxPercentageTransfer.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPercentageTransfer.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxPercentageTransfer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxPercentageTransfer.Location = new System.Drawing.Point(331, 141);
             this.textBoxPercentageTransfer.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxPercentageTransfer.Name = "textBoxPercentageTransfer";
             this.textBoxPercentageTransfer.ReadOnly = true;
-            this.textBoxPercentageTransfer.Size = new System.Drawing.Size(162, 32);
+            this.textBoxPercentageTransfer.Size = new System.Drawing.Size(162, 35);
             this.textBoxPercentageTransfer.TabIndex = 15;
             this.textBoxPercentageTransfer.Text = "0";
             this.textBoxPercentageTransfer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -384,12 +393,13 @@
             // labelConversionRate
             // 
             this.labelConversionRate.AutoSize = true;
-            this.labelConversionRate.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConversionRate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelConversionRate.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelConversionRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.labelConversionRate.Location = new System.Drawing.Point(558, 142);
+            this.labelConversionRate.Location = new System.Drawing.Point(496, 142);
             this.labelConversionRate.Margin = new System.Windows.Forms.Padding(2);
             this.labelConversionRate.Name = "labelConversionRate";
-            this.labelConversionRate.Size = new System.Drawing.Size(98, 25);
+            this.labelConversionRate.Size = new System.Drawing.Size(160, 31);
             this.labelConversionRate.TabIndex = 14;
             this.labelConversionRate.Text = "نسبة التحويل";
             this.labelConversionRate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -397,12 +407,12 @@
             // textBoxDollarSaveAmount
             // 
             this.textBoxDollarSaveAmount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxDollarSaveAmount.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDollarSaveAmount.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxDollarSaveAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxDollarSaveAmount.Location = new System.Drawing.Point(1, 71);
             this.textBoxDollarSaveAmount.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxDollarSaveAmount.Name = "textBoxDollarSaveAmount";
-            this.textBoxDollarSaveAmount.Size = new System.Drawing.Size(164, 32);
+            this.textBoxDollarSaveAmount.Size = new System.Drawing.Size(164, 35);
             this.textBoxDollarSaveAmount.TabIndex = 13;
             this.textBoxDollarSaveAmount.Text = "0";
             this.textBoxDollarSaveAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -412,7 +422,7 @@
             // 
             this.labelUSPaid.AutoSize = true;
             this.labelUSPaid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelUSPaid.Font = new System.Drawing.Font("Droid Arabic Kufi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUSPaid.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelUSPaid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelUSPaid.Location = new System.Drawing.Point(168, 72);
             this.labelUSPaid.Margin = new System.Windows.Forms.Padding(2);
@@ -425,12 +435,12 @@
             // textBoxLocalSaveAmount
             // 
             this.textBoxLocalSaveAmount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxLocalSaveAmount.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLocalSaveAmount.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxLocalSaveAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxLocalSaveAmount.Location = new System.Drawing.Point(331, 71);
             this.textBoxLocalSaveAmount.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxLocalSaveAmount.Name = "textBoxLocalSaveAmount";
-            this.textBoxLocalSaveAmount.Size = new System.Drawing.Size(162, 32);
+            this.textBoxLocalSaveAmount.Size = new System.Drawing.Size(162, 35);
             this.textBoxLocalSaveAmount.TabIndex = 11;
             this.textBoxLocalSaveAmount.Text = "0";
             this.textBoxLocalSaveAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -441,7 +451,7 @@
             // 
             this.labelIQPaid.AutoSize = true;
             this.labelIQPaid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelIQPaid.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIQPaid.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(178)));
             this.labelIQPaid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelIQPaid.Location = new System.Drawing.Point(496, 72);
             this.labelIQPaid.Margin = new System.Windows.Forms.Padding(2);
@@ -455,7 +465,7 @@
             // 
             this.labelInvoiceTotal.AutoSize = true;
             this.labelInvoiceTotal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelInvoiceTotal.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInvoiceTotal.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelInvoiceTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelInvoiceTotal.Location = new System.Drawing.Point(496, 2);
             this.labelInvoiceTotal.Margin = new System.Windows.Forms.Padding(2);
@@ -468,13 +478,13 @@
             // textBoxTotalInvoice
             // 
             this.textBoxTotalInvoice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxTotalInvoice.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTotalInvoice.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxTotalInvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxTotalInvoice.Location = new System.Drawing.Point(331, 1);
             this.textBoxTotalInvoice.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxTotalInvoice.Name = "textBoxTotalInvoice";
             this.textBoxTotalInvoice.ReadOnly = true;
-            this.textBoxTotalInvoice.Size = new System.Drawing.Size(162, 32);
+            this.textBoxTotalInvoice.Size = new System.Drawing.Size(162, 35);
             this.textBoxTotalInvoice.TabIndex = 3;
             this.textBoxTotalInvoice.Text = "مجموع القائمة";
             this.textBoxTotalInvoice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -483,7 +493,7 @@
             // 
             this.radioButtonPercentageDiscount.AutoSize = true;
             this.radioButtonPercentageDiscount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButtonPercentageDiscount.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonPercentageDiscount.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.radioButtonPercentageDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.radioButtonPercentageDiscount.Location = new System.Drawing.Point(497, 38);
             this.radioButtonPercentageDiscount.Name = "radioButtonPercentageDiscount";
@@ -497,7 +507,7 @@
             // 
             this.radioButtonDiscountAmount.AutoSize = true;
             this.radioButtonDiscountAmount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButtonDiscountAmount.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDiscountAmount.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.radioButtonDiscountAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.radioButtonDiscountAmount.Location = new System.Drawing.Point(169, 38);
             this.radioButtonDiscountAmount.Name = "radioButtonDiscountAmount";
@@ -510,12 +520,12 @@
             // textBoxDiscountPercentage
             // 
             this.textBoxDiscountPercentage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxDiscountPercentage.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDiscountPercentage.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxDiscountPercentage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxDiscountPercentage.Location = new System.Drawing.Point(331, 36);
             this.textBoxDiscountPercentage.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxDiscountPercentage.Name = "textBoxDiscountPercentage";
-            this.textBoxDiscountPercentage.Size = new System.Drawing.Size(162, 32);
+            this.textBoxDiscountPercentage.Size = new System.Drawing.Size(162, 35);
             this.textBoxDiscountPercentage.TabIndex = 6;
             this.textBoxDiscountPercentage.Text = "0";
             this.textBoxDiscountPercentage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -524,12 +534,12 @@
             // textBoxDiscountAmount
             // 
             this.textBoxDiscountAmount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxDiscountAmount.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDiscountAmount.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxDiscountAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxDiscountAmount.Location = new System.Drawing.Point(1, 36);
             this.textBoxDiscountAmount.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxDiscountAmount.Name = "textBoxDiscountAmount";
-            this.textBoxDiscountAmount.Size = new System.Drawing.Size(164, 32);
+            this.textBoxDiscountAmount.Size = new System.Drawing.Size(164, 35);
             this.textBoxDiscountAmount.TabIndex = 7;
             this.textBoxDiscountAmount.Text = "0";
             this.textBoxDiscountAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -539,7 +549,7 @@
             // 
             this.labelNetAmountInvoice.AutoSize = true;
             this.labelNetAmountInvoice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelNetAmountInvoice.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNetAmountInvoice.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelNetAmountInvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelNetAmountInvoice.Location = new System.Drawing.Point(168, 2);
             this.labelNetAmountInvoice.Margin = new System.Windows.Forms.Padding(2);
@@ -552,13 +562,13 @@
             // textBoxFinalAmount
             // 
             this.textBoxFinalAmount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxFinalAmount.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFinalAmount.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxFinalAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxFinalAmount.Location = new System.Drawing.Point(1, 1);
             this.textBoxFinalAmount.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxFinalAmount.Name = "textBoxFinalAmount";
             this.textBoxFinalAmount.ReadOnly = true;
-            this.textBoxFinalAmount.Size = new System.Drawing.Size(164, 32);
+            this.textBoxFinalAmount.Size = new System.Drawing.Size(164, 35);
             this.textBoxFinalAmount.TabIndex = 9;
             this.textBoxFinalAmount.Text = "صافي القائمة";
             this.textBoxFinalAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -566,12 +576,13 @@
             // labelStockQuantity
             // 
             this.labelStockQuantity.AutoSize = true;
-            this.labelStockQuantity.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStockQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelStockQuantity.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelStockQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.labelStockQuantity.Location = new System.Drawing.Point(547, 177);
+            this.labelStockQuantity.Location = new System.Drawing.Point(496, 177);
             this.labelStockQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.labelStockQuantity.Name = "labelStockQuantity";
-            this.labelStockQuantity.Size = new System.Drawing.Size(109, 25);
+            this.labelStockQuantity.Size = new System.Drawing.Size(160, 31);
             this.labelStockQuantity.TabIndex = 3;
             this.labelStockQuantity.Text = "الرصيد المخزني";
             this.labelStockQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -579,13 +590,13 @@
             // textBoxStockQuantity
             // 
             this.textBoxStockQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxStockQuantity.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStockQuantity.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxStockQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxStockQuantity.Location = new System.Drawing.Point(331, 176);
             this.textBoxStockQuantity.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxStockQuantity.Name = "textBoxStockQuantity";
             this.textBoxStockQuantity.ReadOnly = true;
-            this.textBoxStockQuantity.Size = new System.Drawing.Size(162, 32);
+            this.textBoxStockQuantity.Size = new System.Drawing.Size(162, 35);
             this.textBoxStockQuantity.TabIndex = 4;
             this.textBoxStockQuantity.Text = "0";
             this.textBoxStockQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -593,12 +604,13 @@
             // labelCriticalRange
             // 
             this.labelCriticalRange.AutoSize = true;
-            this.labelCriticalRange.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCriticalRange.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelCriticalRange.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelCriticalRange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.labelCriticalRange.Location = new System.Drawing.Point(572, 212);
+            this.labelCriticalRange.Location = new System.Drawing.Point(496, 212);
             this.labelCriticalRange.Margin = new System.Windows.Forms.Padding(2);
             this.labelCriticalRange.Name = "labelCriticalRange";
-            this.labelCriticalRange.Size = new System.Drawing.Size(84, 25);
+            this.labelCriticalRange.Size = new System.Drawing.Size(160, 31);
             this.labelCriticalRange.TabIndex = 5;
             this.labelCriticalRange.Text = "الحد الادنى";
             this.labelCriticalRange.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -606,13 +618,13 @@
             // textBoxCritiCalRange
             // 
             this.textBoxCritiCalRange.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxCritiCalRange.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCritiCalRange.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxCritiCalRange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxCritiCalRange.Location = new System.Drawing.Point(331, 211);
             this.textBoxCritiCalRange.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxCritiCalRange.Name = "textBoxCritiCalRange";
             this.textBoxCritiCalRange.ReadOnly = true;
-            this.textBoxCritiCalRange.Size = new System.Drawing.Size(162, 32);
+            this.textBoxCritiCalRange.Size = new System.Drawing.Size(162, 35);
             this.textBoxCritiCalRange.TabIndex = 6;
             this.textBoxCritiCalRange.Text = "0";
             this.textBoxCritiCalRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -620,12 +632,13 @@
             // labelExpireDate
             // 
             this.labelExpireDate.AutoSize = true;
-            this.labelExpireDate.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExpireDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelExpireDate.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelExpireDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.labelExpireDate.Location = new System.Drawing.Point(193, 212);
+            this.labelExpireDate.Location = new System.Drawing.Point(168, 212);
             this.labelExpireDate.Margin = new System.Windows.Forms.Padding(2);
             this.labelExpireDate.Name = "labelExpireDate";
-            this.labelExpireDate.Size = new System.Drawing.Size(135, 25);
+            this.labelExpireDate.Size = new System.Drawing.Size(160, 31);
             this.labelExpireDate.TabIndex = 7;
             this.labelExpireDate.Text = "تاريخ انتهاء صلاحية";
             this.labelExpireDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -633,13 +646,13 @@
             // textBoxExpireDate
             // 
             this.textBoxExpireDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxExpireDate.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxExpireDate.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxExpireDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxExpireDate.Location = new System.Drawing.Point(1, 211);
             this.textBoxExpireDate.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxExpireDate.Name = "textBoxExpireDate";
             this.textBoxExpireDate.ReadOnly = true;
-            this.textBoxExpireDate.Size = new System.Drawing.Size(164, 32);
+            this.textBoxExpireDate.Size = new System.Drawing.Size(164, 35);
             this.textBoxExpireDate.TabIndex = 8;
             this.textBoxExpireDate.Text = "لايوجد";
             this.textBoxExpireDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -651,7 +664,7 @@
             this.buttonInvoicePause.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonInvoicePause.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonInvoicePause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInvoicePause.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInvoicePause.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonInvoicePause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.buttonInvoicePause.Location = new System.Drawing.Point(139, 67);
             this.buttonInvoicePause.Margin = new System.Windows.Forms.Padding(1);
@@ -669,7 +682,7 @@
             this.buttonInvoiceSave.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonInvoiceSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonInvoiceSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInvoiceSave.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInvoiceSave.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonInvoiceSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.buttonInvoiceSave.Location = new System.Drawing.Point(139, 1);
             this.buttonInvoiceSave.Margin = new System.Windows.Forms.Padding(1);
@@ -687,7 +700,7 @@
             this.buttonInvoicePrint.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonInvoicePrint.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonInvoicePrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInvoicePrint.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInvoicePrint.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonInvoicePrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.buttonInvoicePrint.Location = new System.Drawing.Point(1, 67);
             this.buttonInvoicePrint.Margin = new System.Windows.Forms.Padding(1);
@@ -705,7 +718,7 @@
             this.buttonInvoiceCancel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonInvoiceCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonInvoiceCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInvoiceCancel.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInvoiceCancel.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonInvoiceCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.buttonInvoiceCancel.Location = new System.Drawing.Point(1, 1);
             this.buttonInvoiceCancel.Margin = new System.Windows.Forms.Padding(1);
@@ -738,7 +751,7 @@
             // 
             this.labelInvoiceDate.AutoSize = true;
             this.labelInvoiceDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelInvoiceDate.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.labelInvoiceDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelInvoiceDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelInvoiceDate.Location = new System.Drawing.Point(2, 137);
             this.labelInvoiceDate.Margin = new System.Windows.Forms.Padding(2);
@@ -751,7 +764,7 @@
             // textBoxInvoiceNo
             // 
             this.textBoxInvoiceNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxInvoiceNo.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.textBoxInvoiceNo.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxInvoiceNo.Location = new System.Drawing.Point(0, 0);
             this.textBoxInvoiceNo.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxInvoiceNo.Multiline = true;
@@ -764,7 +777,7 @@
             // labelInvoiceNo
             // 
             this.labelInvoiceNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelInvoiceNo.Font = new System.Drawing.Font("Droid Arabic Kufi", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.labelInvoiceNo.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelInvoiceNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelInvoiceNo.Location = new System.Drawing.Point(0, 0);
             this.labelInvoiceNo.Margin = new System.Windows.Forms.Padding(2);
@@ -779,10 +792,10 @@
             this.listBoxitemsWithoutBarcode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.listBoxitemsWithoutBarcode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxitemsWithoutBarcode.Enabled = false;
-            this.listBoxitemsWithoutBarcode.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxitemsWithoutBarcode.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.listBoxitemsWithoutBarcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.listBoxitemsWithoutBarcode.FormattingEnabled = true;
-            this.listBoxitemsWithoutBarcode.ItemHeight = 25;
+            this.listBoxitemsWithoutBarcode.ItemHeight = 26;
             this.listBoxitemsWithoutBarcode.Location = new System.Drawing.Point(2, 347);
             this.listBoxitemsWithoutBarcode.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxitemsWithoutBarcode.Name = "listBoxitemsWithoutBarcode";
@@ -795,7 +808,7 @@
             this.textBoxCustomerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.textBoxCustomerName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxCustomerName.Enabled = false;
-            this.textBoxCustomerName.Font = new System.Drawing.Font("Droid Arabic Kufi", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.textBoxCustomerName.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxCustomerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxCustomerName.Location = new System.Drawing.Point(0, 0);
             this.textBoxCustomerName.Multiline = true;
@@ -809,7 +822,7 @@
             // 
             this.labelCustomerName.BackColor = System.Drawing.SystemColors.Window;
             this.labelCustomerName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCustomerName.Font = new System.Drawing.Font("Droid Arabic Kufi", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.labelCustomerName.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelCustomerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelCustomerName.Location = new System.Drawing.Point(0, 0);
             this.labelCustomerName.Margin = new System.Windows.Forms.Padding(2);
@@ -844,7 +857,7 @@
             this.buttonInpostInvoices.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonInpostInvoices.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonInpostInvoices.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInpostInvoices.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInpostInvoices.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonInpostInvoices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.buttonInpostInvoices.Location = new System.Drawing.Point(2, 2);
             this.buttonInpostInvoices.Margin = new System.Windows.Forms.Padding(2);
@@ -863,7 +876,7 @@
             this.buttonCreateInvoice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonCreateInvoice.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonCreateInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCreateInvoice.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCreateInvoice.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonCreateInvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.buttonCreateInvoice.Location = new System.Drawing.Point(140, 2);
             this.buttonCreateInvoice.Margin = new System.Windows.Forms.Padding(2);
@@ -879,7 +892,7 @@
             this.textBoxBarCodeItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.textBoxBarCodeItem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxBarCodeItem.Enabled = false;
-            this.textBoxBarCodeItem.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBarCodeItem.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxBarCodeItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxBarCodeItem.Location = new System.Drawing.Point(3, 218);
             this.textBoxBarCodeItem.Multiline = true;
@@ -893,7 +906,7 @@
             // 
             this.labelBarcodeItem.AutoSize = true;
             this.labelBarcodeItem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelBarcodeItem.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.labelBarcodeItem.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelBarcodeItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelBarcodeItem.Location = new System.Drawing.Point(2, 192);
             this.labelBarcodeItem.Margin = new System.Windows.Forms.Padding(2);
@@ -945,7 +958,7 @@
             // 
             this.labelItemName.AutoSize = true;
             this.labelItemName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelItemName.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.labelItemName.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelItemName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelItemName.Location = new System.Drawing.Point(2, 317);
             this.labelItemName.Margin = new System.Windows.Forms.Padding(2);
@@ -959,7 +972,7 @@
             // 
             this.textBoxFilterByName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.textBoxFilterByName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxFilterByName.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFilterByName.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxFilterByName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxFilterByName.Location = new System.Drawing.Point(3, 283);
             this.textBoxFilterByName.Multiline = true;
@@ -973,7 +986,7 @@
             // 
             this.labelFilterByName.AutoSize = true;
             this.labelFilterByName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelFilterByName.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.labelFilterByName.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelFilterByName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelFilterByName.Location = new System.Drawing.Point(2, 252);
             this.labelFilterByName.Margin = new System.Windows.Forms.Padding(2);
@@ -1142,26 +1155,26 @@
             // textBoxCustomerMobile
             // 
             this.textBoxCustomerMobile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxCustomerMobile.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustomerMobile.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxCustomerMobile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxCustomerMobile.Location = new System.Drawing.Point(1, 176);
             this.textBoxCustomerMobile.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxCustomerMobile.Name = "textBoxCustomerMobile";
             this.textBoxCustomerMobile.ReadOnly = true;
-            this.textBoxCustomerMobile.Size = new System.Drawing.Size(164, 32);
+            this.textBoxCustomerMobile.Size = new System.Drawing.Size(164, 35);
             this.textBoxCustomerMobile.TabIndex = 22;
             this.textBoxCustomerMobile.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxCustomerAdd
             // 
             this.textBoxCustomerAdd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxCustomerAdd.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustomerAdd.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxCustomerAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxCustomerAdd.Location = new System.Drawing.Point(1, 141);
             this.textBoxCustomerAdd.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxCustomerAdd.Name = "textBoxCustomerAdd";
             this.textBoxCustomerAdd.ReadOnly = true;
-            this.textBoxCustomerAdd.Size = new System.Drawing.Size(164, 32);
+            this.textBoxCustomerAdd.Size = new System.Drawing.Size(164, 35);
             this.textBoxCustomerAdd.TabIndex = 20;
             this.textBoxCustomerAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1169,7 +1182,7 @@
             // 
             this.labelCustomerAdd.AutoSize = true;
             this.labelCustomerAdd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCustomerAdd.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCustomerAdd.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelCustomerAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelCustomerAdd.Location = new System.Drawing.Point(168, 142);
             this.labelCustomerAdd.Margin = new System.Windows.Forms.Padding(2);
@@ -1183,7 +1196,7 @@
             // 
             this.labelCustomerMobile.AutoSize = true;
             this.labelCustomerMobile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCustomerMobile.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCustomerMobile.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelCustomerMobile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.labelCustomerMobile.Location = new System.Drawing.Point(168, 177);
             this.labelCustomerMobile.Margin = new System.Windows.Forms.Padding(2);
@@ -1295,6 +1308,12 @@
         private System.Windows.Forms.TextBox textBoxCustomerAdd;
         private System.Windows.Forms.Label labelCustomerAdd;
         private System.Windows.Forms.Label labelCustomerMobile;
+        private System.Windows.Forms.SplitContainer splitContainerCustomerNameandInvNo;
+        private System.Windows.Forms.TextBox textBoxFilterByName;
+        private System.Windows.Forms.Label labelFilterByName;
+        private System.Windows.Forms.SplitContainer splitContainerTextBoxes;
+        private System.Windows.Forms.Label labelItemName;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelButtons;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCounter;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnItemQuantity;
@@ -1304,11 +1323,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnExpireDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStockQuantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCriticalRange;
-        private System.Windows.Forms.SplitContainer splitContainerCustomerNameandInvNo;
-        private System.Windows.Forms.TextBox textBoxFilterByName;
-        private System.Windows.Forms.Label labelFilterByName;
-        private System.Windows.Forms.SplitContainer splitContainerTextBoxes;
-        private System.Windows.Forms.Label labelItemName;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelButtons;
     }
 }

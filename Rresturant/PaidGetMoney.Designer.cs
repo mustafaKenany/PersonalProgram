@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelFormTitle = new System.Windows.Forms.Panel();
             this.labelEXT = new System.Windows.Forms.Label();
             this.labelTitleForm = new System.Windows.Forms.Label();
@@ -39,6 +39,7 @@
             this.tableLayoutPanelDateContain = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimePickerTransaction = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanelUpperControl = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonPrintallTransaction = new System.Windows.Forms.Button();
             this.buttonSaveTransaction = new System.Windows.Forms.Button();
             this.buttonDeleteallTransaction = new System.Windows.Forms.Button();
             this.buttonNewTransaction = new System.Windows.Forms.Button();
@@ -46,11 +47,11 @@
             this.panelRightControl = new System.Windows.Forms.Panel();
             this.labelUserName = new System.Windows.Forms.Label();
             this.tableLayoutPanelRightContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonPrintTransaction = new System.Windows.Forms.Button();
             this.buttondeleteTransaction = new System.Windows.Forms.Button();
             this.buttonAddTransaction = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridViewMoney = new System.Windows.Forms.DataGridView();
-            this.panelFooter = new System.Windows.Forms.Panel();
             this.ColumnTransactionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnmoneyType = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.ColumnMoneyAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,8 +59,7 @@
             this.ColumnTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCutomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNotes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonPrintTransaction = new System.Windows.Forms.Button();
-            this.buttonPrintallTransaction = new System.Windows.Forms.Button();
+            this.panelFooter = new System.Windows.Forms.Panel();
             this.tableLayoutPanelCustomer = new System.Windows.Forms.TableLayoutPanel();
             this.labelCutomerTotal = new System.Windows.Forms.Label();
             this.textBoxCutomerTotal = new System.Windows.Forms.TextBox();
@@ -183,6 +183,23 @@
             this.tableLayoutPanelUpperControl.Size = new System.Drawing.Size(350, 55);
             this.tableLayoutPanelUpperControl.TabIndex = 0;
             // 
+            // buttonPrintallTransaction
+            // 
+            this.buttonPrintallTransaction.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonPrintallTransaction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonPrintallTransaction.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
+            this.buttonPrintallTransaction.FlatAppearance.BorderSize = 2;
+            this.buttonPrintallTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPrintallTransaction.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.buttonPrintallTransaction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.buttonPrintallTransaction.Location = new System.Drawing.Point(6, 6);
+            this.buttonPrintallTransaction.Name = "buttonPrintallTransaction";
+            this.buttonPrintallTransaction.Size = new System.Drawing.Size(62, 43);
+            this.buttonPrintallTransaction.TabIndex = 5;
+            this.buttonPrintallTransaction.Text = "طباعة";
+            this.buttonPrintallTransaction.UseVisualStyleBackColor = false;
+            this.buttonPrintallTransaction.Click += new System.EventHandler(this.buttonPrintallTransaction_Click);
+            // 
             // buttonSaveTransaction
             // 
             this.buttonSaveTransaction.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -299,6 +316,24 @@
             this.tableLayoutPanelRightContainer.Size = new System.Drawing.Size(113, 250);
             this.tableLayoutPanelRightContainer.TabIndex = 0;
             // 
+            // buttonPrintTransaction
+            // 
+            this.buttonPrintTransaction.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonPrintTransaction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonPrintTransaction.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
+            this.buttonPrintTransaction.FlatAppearance.BorderSize = 2;
+            this.buttonPrintTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPrintTransaction.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.buttonPrintTransaction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.buttonPrintTransaction.Location = new System.Drawing.Point(8, 170);
+            this.buttonPrintTransaction.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonPrintTransaction.Name = "buttonPrintTransaction";
+            this.buttonPrintTransaction.Size = new System.Drawing.Size(97, 72);
+            this.buttonPrintTransaction.TabIndex = 7;
+            this.buttonPrintTransaction.Text = "طباعة حركة";
+            this.buttonPrintTransaction.UseVisualStyleBackColor = false;
+            this.buttonPrintTransaction.Click += new System.EventHandler(this.buttonPrintTransaction_Click);
+            // 
             // buttondeleteTransaction
             // 
             this.buttondeleteTransaction.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -360,15 +395,15 @@
             this.dataGridViewMoney.AllowUserToDeleteRows = false;
             this.dataGridViewMoney.BackgroundColor = System.Drawing.Color.Azure;
             this.dataGridViewMoney.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Changa", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(1);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewMoney.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Changa", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(1);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewMoney.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewMoney.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMoney.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnTransactionID,
@@ -399,19 +434,6 @@
             this.dataGridViewMoney.SelectionChanged += new System.EventHandler(this.dataGridViewMoney_SelectionChanged);
             this.dataGridViewMoney.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dataGridViewMoney_KeyPress);
             // 
-            // panelFooter
-            // 
-            this.panelFooter.BackColor = System.Drawing.Color.Transparent;
-            this.panelFooter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelFooter.Controls.Add(this.tableLayoutPanelCustomer);
-            this.panelFooter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFooter.Location = new System.Drawing.Point(3, 533);
-            this.panelFooter.Margin = new System.Windows.Forms.Padding(0);
-            this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Padding = new System.Windows.Forms.Padding(3);
-            this.panelFooter.Size = new System.Drawing.Size(1109, 59);
-            this.panelFooter.TabIndex = 4;
-            // 
             // ColumnTransactionID
             // 
             this.ColumnTransactionID.DataPropertyName = "TransactionID";
@@ -432,8 +454,8 @@
             // 
             // ColumnMoneyAmount
             // 
-            dataGridViewCellStyle6.NullValue = null;
-            this.ColumnMoneyAmount.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.NullValue = null;
+            this.ColumnMoneyAmount.DefaultCellStyle = dataGridViewCellStyle2;
             this.ColumnMoneyAmount.HeaderText = "المبلغ";
             this.ColumnMoneyAmount.Name = "ColumnMoneyAmount";
             this.ColumnMoneyAmount.Width = 125;
@@ -441,16 +463,16 @@
             // ColumnTansferPercentage
             // 
             this.ColumnTansferPercentage.DataPropertyName = "TransferPercentage";
-            dataGridViewCellStyle7.NullValue = null;
-            this.ColumnTansferPercentage.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.NullValue = null;
+            this.ColumnTansferPercentage.DefaultCellStyle = dataGridViewCellStyle3;
             this.ColumnTansferPercentage.HeaderText = "نسبة التحويل";
             this.ColumnTansferPercentage.Name = "ColumnTansferPercentage";
             this.ColumnTansferPercentage.Width = 120;
             // 
             // ColumnTotal
             // 
-            dataGridViewCellStyle8.NullValue = null;
-            this.ColumnTotal.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.NullValue = null;
+            this.ColumnTotal.DefaultCellStyle = dataGridViewCellStyle4;
             this.ColumnTotal.HeaderText = "مبلغ التعادل";
             this.ColumnTotal.Name = "ColumnTotal";
             this.ColumnTotal.ReadOnly = true;
@@ -470,38 +492,18 @@
             this.ColumnNotes.Name = "ColumnNotes";
             this.ColumnNotes.Width = 350;
             // 
-            // buttonPrintTransaction
+            // panelFooter
             // 
-            this.buttonPrintTransaction.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonPrintTransaction.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonPrintTransaction.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
-            this.buttonPrintTransaction.FlatAppearance.BorderSize = 2;
-            this.buttonPrintTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPrintTransaction.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.buttonPrintTransaction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.buttonPrintTransaction.Location = new System.Drawing.Point(8, 170);
-            this.buttonPrintTransaction.Margin = new System.Windows.Forms.Padding(5);
-            this.buttonPrintTransaction.Name = "buttonPrintTransaction";
-            this.buttonPrintTransaction.Size = new System.Drawing.Size(97, 72);
-            this.buttonPrintTransaction.TabIndex = 7;
-            this.buttonPrintTransaction.Text = "طباعة حركة";
-            this.buttonPrintTransaction.UseVisualStyleBackColor = false;
-            // 
-            // buttonPrintallTransaction
-            // 
-            this.buttonPrintallTransaction.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonPrintallTransaction.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonPrintallTransaction.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
-            this.buttonPrintallTransaction.FlatAppearance.BorderSize = 2;
-            this.buttonPrintallTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPrintallTransaction.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.buttonPrintallTransaction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.buttonPrintallTransaction.Location = new System.Drawing.Point(6, 6);
-            this.buttonPrintallTransaction.Name = "buttonPrintallTransaction";
-            this.buttonPrintallTransaction.Size = new System.Drawing.Size(62, 43);
-            this.buttonPrintallTransaction.TabIndex = 5;
-            this.buttonPrintallTransaction.Text = "طباعة";
-            this.buttonPrintallTransaction.UseVisualStyleBackColor = false;
+            this.panelFooter.BackColor = System.Drawing.Color.Transparent;
+            this.panelFooter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelFooter.Controls.Add(this.tableLayoutPanelCustomer);
+            this.panelFooter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFooter.Location = new System.Drawing.Point(3, 533);
+            this.panelFooter.Margin = new System.Windows.Forms.Padding(0);
+            this.panelFooter.Name = "panelFooter";
+            this.panelFooter.Padding = new System.Windows.Forms.Padding(3);
+            this.panelFooter.Size = new System.Drawing.Size(1109, 59);
+            this.panelFooter.TabIndex = 4;
             // 
             // tableLayoutPanelCustomer
             // 
@@ -598,6 +600,11 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.DataGridView dataGridViewMoney;
         private System.Windows.Forms.Panel panelFooter;
+        private System.Windows.Forms.Button buttonPrintallTransaction;
+        private System.Windows.Forms.Button buttonPrintTransaction;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelCustomer;
+        private System.Windows.Forms.Label labelCutomerTotal;
+        private System.Windows.Forms.TextBox textBoxCutomerTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTransactionID;
         private System.Windows.Forms.DataGridViewComboBoxColumn ColumnmoneyType;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMoneyAmount;
@@ -605,10 +612,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCutomerName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNotes;
-        private System.Windows.Forms.Button buttonPrintallTransaction;
-        private System.Windows.Forms.Button buttonPrintTransaction;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelCustomer;
-        private System.Windows.Forms.Label labelCutomerTotal;
-        private System.Windows.Forms.TextBox textBoxCutomerTotal;
     }
 }

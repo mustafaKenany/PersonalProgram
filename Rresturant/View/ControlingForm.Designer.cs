@@ -71,7 +71,7 @@
             // 
             this.labelExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelExit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelExit.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelExit.ForeColor = System.Drawing.Color.White;
             this.labelExit.Location = new System.Drawing.Point(907, 0);
             this.labelExit.Name = "labelExit";
@@ -85,16 +85,16 @@
             // 
             // labelFormTitle
             // 
-            this.labelFormTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelFormTitle.AutoSize = true;
             this.labelFormTitle.BackColor = System.Drawing.Color.Transparent;
-            this.labelFormTitle.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFormTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelFormTitle.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelFormTitle.ForeColor = System.Drawing.Color.White;
-            this.labelFormTitle.Location = new System.Drawing.Point(430, 7);
+            this.labelFormTitle.Location = new System.Drawing.Point(0, 0);
             this.labelFormTitle.Name = "labelFormTitle";
-            this.labelFormTitle.Size = new System.Drawing.Size(96, 31);
+            this.labelFormTitle.Size = new System.Drawing.Size(950, 45);
             this.labelFormTitle.TabIndex = 30;
             this.labelFormTitle.Text = "الـــرئــيسية";
+            this.labelFormTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelFormTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelFormTitle_MouseMove);
             // 
             // panelfooter
@@ -121,7 +121,7 @@
             // 
             this.labelaboutCompany.BackColor = System.Drawing.Color.Transparent;
             this.labelaboutCompany.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelaboutCompany.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelaboutCompany.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelaboutCompany.ForeColor = System.Drawing.Color.White;
             this.labelaboutCompany.Location = new System.Drawing.Point(255, 0);
             this.labelaboutCompany.Name = "labelaboutCompany";
@@ -136,7 +136,7 @@
             // 
             this.btn_SettingForm.BackColor = System.Drawing.Color.Transparent;
             this.btn_SettingForm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_SettingForm.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SettingForm.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btn_SettingForm.ForeColor = System.Drawing.Color.White;
             this.btn_SettingForm.Location = new System.Drawing.Point(477, 0);
             this.btn_SettingForm.Name = "btn_SettingForm";
@@ -173,7 +173,7 @@
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.button7.Image = global::Rresturant.Properties.Resources.give_money;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -193,7 +193,7 @@
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.button6.Image = global::Rresturant.Properties.Resources.backup;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -213,7 +213,7 @@
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.button5.Image = global::Rresturant.Properties.Resources.users2;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -233,7 +233,7 @@
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.button4.Image = global::Rresturant.Properties.Resources.debt1;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -253,7 +253,7 @@
             this.buttonGetMoney.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonGetMoney.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonGetMoney.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGetMoney.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGetMoney.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonGetMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.buttonGetMoney.Image = global::Rresturant.Properties.Resources.payment_2;
             this.buttonGetMoney.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -274,7 +274,7 @@
             this.buttonPaidMoney.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonPaidMoney.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonPaidMoney.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPaidMoney.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPaidMoney.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonPaidMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.buttonPaidMoney.Image = ((System.Drawing.Image)(resources.GetObject("buttonPaidMoney.Image")));
             this.buttonPaidMoney.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -295,7 +295,7 @@
             this.buttonboxMoney.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonboxMoney.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonboxMoney.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonboxMoney.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonboxMoney.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonboxMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.buttonboxMoney.Image = global::Rresturant.Properties.Resources.money;
             this.buttonboxMoney.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -318,7 +318,7 @@
             this.buttonSavePurshaceInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSavePurshaceInvoice.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonSavePurshaceInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSavePurshaceInvoice.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSavePurshaceInvoice.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonSavePurshaceInvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.buttonSavePurshaceInvoice.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonSavePurshaceInvoice.Location = new System.Drawing.Point(19, 72);
@@ -339,7 +339,7 @@
             this.buttonSaveSaleInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSaveSaleInvoice.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonSaveSaleInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSaveSaleInvoice.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSaveSaleInvoice.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonSaveSaleInvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.buttonSaveSaleInvoice.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonSaveSaleInvoice.Location = new System.Drawing.Point(559, 285);
@@ -360,7 +360,7 @@
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.button3.Image = global::Rresturant.Properties.Resources.priceSettingsIcon;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -382,7 +382,7 @@
             this.btn_PurshaceForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_PurshaceForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btn_PurshaceForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PurshaceForm.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PurshaceForm.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btn_PurshaceForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.btn_PurshaceForm.Image = global::Rresturant.Properties.Resources.purchasesIcon;
             this.btn_PurshaceForm.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -404,7 +404,7 @@
             this.btn_CasherForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_CasherForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btn_CasherForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CasherForm.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CasherForm.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btn_CasherForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.btn_CasherForm.Image = global::Rresturant.Properties.Resources.invoiceIcon;
             this.btn_CasherForm.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -425,7 +425,7 @@
             this.btn_ReportingForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_ReportingForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btn_ReportingForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ReportingForm.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ReportingForm.Font = new System.Drawing.Font("Changa", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btn_ReportingForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.btn_ReportingForm.Image = global::Rresturant.Properties.Resources.reportIcon;
             this.btn_ReportingForm.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -469,7 +469,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "الواجهة الرئيسية";
             this.panel_Header.ResumeLayout(false);
-            this.panel_Header.PerformLayout();
             this.panelfooter.ResumeLayout(false);
             this.ResumeLayout(false);
 

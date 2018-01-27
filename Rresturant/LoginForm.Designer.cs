@@ -60,7 +60,7 @@
             // 
             this.labelExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelExit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelExit.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelExit.ForeColor = System.Drawing.Color.White;
             this.labelExit.Location = new System.Drawing.Point(362, 0);
             this.labelExit.Name = "labelExit";
@@ -74,7 +74,7 @@
             // 
             // labelFormTitle
             // 
-            this.labelFormTitle.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFormTitle.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelFormTitle.ForeColor = System.Drawing.Color.White;
             this.labelFormTitle.Location = new System.Drawing.Point(138, 7);
             this.labelFormTitle.Name = "labelFormTitle";
@@ -89,9 +89,9 @@
             this.buttonExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExit.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.buttonExit.Location = new System.Drawing.Point(84, 177);
+            this.buttonExit.Location = new System.Drawing.Point(124, 179);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(117, 42);
             this.buttonExit.TabIndex = 12;
@@ -105,9 +105,9 @@
             this.buttonEnter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonEnter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEnter.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEnter.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.buttonEnter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.buttonEnter.Location = new System.Drawing.Point(207, 177);
+            this.buttonEnter.Location = new System.Drawing.Point(247, 179);
             this.buttonEnter.Name = "buttonEnter";
             this.buttonEnter.Size = new System.Drawing.Size(114, 42);
             this.buttonEnter.TabIndex = 11;
@@ -117,12 +117,12 @@
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.textBoxPassword.Location = new System.Drawing.Point(44, 121);
+            this.textBoxPassword.Location = new System.Drawing.Point(44, 111);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(197, 26);
+            this.textBoxPassword.Size = new System.Drawing.Size(197, 35);
             this.textBoxPassword.TabIndex = 10;
             this.textBoxPassword.Text = "1";
             this.textBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -131,21 +131,21 @@
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.labelPassword.Location = new System.Drawing.Point(278, 119);
+            this.labelPassword.Location = new System.Drawing.Point(257, 119);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(85, 25);
+            this.labelPassword.Size = new System.Drawing.Size(89, 27);
             this.labelPassword.TabIndex = 9;
             this.labelPassword.Text = "كلمة المرور";
             // 
             // textBoxUserName
             // 
-            this.textBoxUserName.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUserName.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.textBoxUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.textBoxUserName.Location = new System.Drawing.Point(44, 82);
+            this.textBoxUserName.Location = new System.Drawing.Point(44, 59);
             this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Size = new System.Drawing.Size(197, 26);
+            this.textBoxUserName.Size = new System.Drawing.Size(197, 35);
             this.textBoxUserName.TabIndex = 8;
             this.textBoxUserName.Text = "Mustafa";
             this.textBoxUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -153,11 +153,11 @@
             // labelUserName
             // 
             this.labelUserName.AutoSize = true;
-            this.labelUserName.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserName.Font = new System.Drawing.Font("Changa", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.labelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.labelUserName.Location = new System.Drawing.Point(254, 79);
+            this.labelUserName.Location = new System.Drawing.Point(257, 67);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(109, 25);
+            this.labelUserName.Size = new System.Drawing.Size(110, 27);
             this.labelUserName.TabIndex = 7;
             this.labelUserName.Text = "أسم المستخدم";
             // 
